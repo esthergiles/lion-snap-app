@@ -19,13 +19,16 @@ $username = "unasnap";
 $password = "mfcf4QxRut9aPdE!k3^IAGJy2rO#PHIFJR1siW4Rx@HbxHReGU0C6hg!0it2Tu!JU^0@6I'$'QgSA1c%CcC^8tg3lVw3My1W0d8EJ";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password);
 
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
+
+$conn->close();
+
     ?>
 
 <!DOCTYPE html>
