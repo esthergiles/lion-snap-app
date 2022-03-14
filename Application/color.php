@@ -16,15 +16,7 @@
 	<link href="css/site.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="main-container">
-                <div class="content-body">
-                    <div class="success-text">UNA SNAP Application UI</div>
-                </div>
-                <form action="color.php" method="post">
-                    What's your fave color? <input type="text" name="color"><br>
-                    <input type="submit">
-                    </form>
-    </div>
+Your favorite color is: <?php echo $_POST["color"]; ?>
+
 </body>
 </html>
