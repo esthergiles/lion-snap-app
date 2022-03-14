@@ -21,6 +21,10 @@
                 <div class="content-body">
                     <div class="success-text">UNA SNAP Application UI</div>
                 </div>
+                <form action="welcome.php" method="post">
+                    What's your fave color? <input type="text" name="color"><br>
+                    <input type="submit">
+                    </form>
     </div>
 </body>
 </html>
