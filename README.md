@@ -1,6 +1,13 @@
 # lion-snap-app
 
-<h2>Note to sam: This is the new repo </h2>
+<h1>Welcome to the Lion Snap </h1>
+** Check out our wiki:
+<h2>User Story</h2>
+<br>As a UNA student that's alone in the dark</br>
+<br>I want an organized app</br>
+<br>So that I can schedule a safe SNAP ride</br>
+
+<h2>Info</h2>
 Created this repo using Azure DevOps with GitHub Actions for Continuous Deployment.
 This web applcation is being hosted in the cloud on Azure.
 
