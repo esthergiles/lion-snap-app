@@ -5,6 +5,14 @@
     $telemetryClient->getContext()->setInstrumentationKey($app_insights_instrumentation);
     $telemetryClient->trackRequest('Server Requests','Azure DevOps Project', time());
     $telemetryClient->flush();
+
+    // Postback
+    $message = "";
+    if(isset($_POST['SubmitButton'])){ //check if form was submitted
+      $input = $_POST['inputText']; //get input text
+      $message = "Success! You entered: ".$input;
+    }    
+    ?>
 ?>
 
 <!DOCTYPE html>
@@ -18,13 +26,16 @@
 
 <body>
     <div class="main-container">
-                <div class="content-body">
-                    <div class="success-text">UNA SNAP Application UI</div>
-                </div>
-                <form action="color.php" method="post">
-                    What's your fave color? <input type="text" name="color"><br>
-                    <input type="submit">
-                    </form>
+        <div class="content-body">
+            <div class="success-text">UNA SNAP Application UI</div>
+        </div>  
+
+        <form action="" method="post">
+        <?php echo $message; ?>
+        Enter your favorite color: 
+        <input type="text" name="inputText"/>
+        <input type="submit" name="SubmitButton"/>
+        </form> 
     </div>
 </body>
 </html>
