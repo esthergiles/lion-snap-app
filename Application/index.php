@@ -14,21 +14,18 @@
     }   
 // Connection to Database
 
-// PHP Data Objects(PDO) Sample Code:
-try {
-    $conn = new PDO("sqlsrv:server = tcp:unasnap.database.windows.net,1433; Database = lionappsql", "unasnap", "mfcf4QxRut9aPdE!k3^IAGJy2rO#PHIFJR1siW4Rx@HbxHReGU0C6hg!0it2Tu!JU^0@6I$QgSA1c%CcC^8tg3lVw3My1W0d8EJ");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
+$servername = "unasnap.database.windows.net";
+$username = "unasnap";
+$password = "mfcf4QxRut9aPdE!k3^IAGJy2rO#PHIFJR1siW4Rx@HbxHReGU0C6hg!0it2Tu!JU^0@6I'$'QgSA1c%CcC^8tg3lVw3My1W0d8EJ";
 
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "unasnap", "pwd" => "mfcf4QxRut9aPdE!k3^IAGJy2rO#PHIFJR1siW4Rx@HbxHReGU0C6hg!0it2Tu!JU^0@6I$QgSA1c%CcC^8tg3lVw3My1W0d8EJ", "Database" => "lionappsql", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:unasnap.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
 
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
     ?>
 
 <!DOCTYPE html>
