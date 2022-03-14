@@ -1,6 +1,8 @@
 # lion-snap-app
 <h1>Welcome to the Lion Snap </h1>
-![image](https://user-images.githubusercontent.com/89217674/158221283-1b3fb836-892e-42f2-aa30-e960fceb0765.png)
+
+![snap](https://user-images.githubusercontent.com/89217674/158221639-ed89e0bd-f99f-43b9-8147-a6e59ccc6f1d.jpg)
+** ^^ edit for QR code **
 
 ** Check out our wiki:
 <h2>User Story</h2>
