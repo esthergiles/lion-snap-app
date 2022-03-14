@@ -28,7 +28,7 @@
             </a>
         </div>
             <div class="content-body">
-                <div class="success-text">Success!</div>
+                <div class="success-text">Heck Year</div>
                 <div class="description line-1">
 				<?php
 				echo "GitHub Workflow has been successfully setup";
