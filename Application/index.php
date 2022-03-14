@@ -67,9 +67,8 @@
   } catch ( Exception $e ) {
     die('Error: ' . $e->getMessage());
   }
-  
+
     ?>
-?>
 
 <!DOCTYPE html>
 <html lang="en">
