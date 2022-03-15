@@ -13,7 +13,8 @@
 * [Product Features](https://github.com/esthergiles/lion-snap-app/wiki/Product-Features)
 * [Technologies Being Used](https://github.com/esthergiles/lion-snap-app/wiki/Technologies-Being-Used)
 
-<h2 Other Important Links: </h2>
+<h2> Other Important Links:</h2>
+
 * [Project Board](https://github.com/esthergiles/lion-snap-app/projects/1)
 * [Issue Cards](https://github.com/esthergiles/lion-snap-app/projects/1)
 * [Pull Requests](https://github.com/esthergiles/lion-snap-app/pulls)
