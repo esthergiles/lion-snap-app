@@ -13,24 +13,22 @@
       $message = "Success! You entered: ".$input;
     }   
 
-    
-// Connection to Database
-$servername = "unasnap.database.windows.net";
-$username = "unasnap";
-$password = "mfcf4QxRut9aPdE!k3^IAGJy2rO#PHIFJR1siW4Rx@HbxHReGU0C6hg!0it2Tu!JU^0@6I'$'QgSA1c%CcC^8tg3lVw3My1W0d8EJ";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+// PHP Data Objects(PDO) Sample Code:
+try {
+    $conn = new PDO("sqlsrv:server = tcp:unasnap.database.windows.net,1433; Database = lionappsql", "unasnap", "Leoluna2022");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
-echo "Connected successfully";
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
 
-$conn->close();
+// SQL Server Extension Sample Code:
+$connectionInfo = array("UID" => "unasnap", "pwd" => "Leoluna2022", "Database" => "lionappsql", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:unasnap.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo);
+?>
 
-    ?>
 
 <!DOCTYPE html>
 <html lang="en">
