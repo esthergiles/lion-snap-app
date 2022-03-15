@@ -5,11 +5,11 @@
 <br>** ^^ edit for QR code ** </br>
 
 ** Check out our [Wiki](https://github.com/esthergiles/lion-snap-app/wiki)) for more information:
-* [About] (https://github.com/esthergiles/lion-snap-app/wiki/About)
+* [About](https://github.com/esthergiles/lion-snap-app/wiki/About)
 * [IRL Examples](https://github.com/esthergiles/lion-snap-app/wiki/IRL-Examples)
-* [Meet the Team] (https://github.com/esthergiles/lion-snap-app/wiki/Meet-The-Team)
-* [Product Features] (https://github.com/esthergiles/lion-snap-app/wiki/Product-Features)
-* [Technologies Being Used] (https://github.com/esthergiles/lion-snap-app/wiki/Technologies-Being-Used)
+* [Meet the Team](https://github.com/esthergiles/lion-snap-app/wiki/Meet-The-Team)
+* [Product Features](https://github.com/esthergiles/lion-snap-app/wiki/Product-Features)
+* [Technologies Being Used](https://github.com/esthergiles/lion-snap-app/wiki/Technologies-Being-Used)
 
 <h2>User Story</h2>
 <br>As a UNA student that's alone in the dark</br>
