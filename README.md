@@ -4,32 +4,24 @@
 ![snap](https://user-images.githubusercontent.com/89217674/158221639-ed89e0bd-f99f-43b9-8147-a6e59ccc6f1d.jpg)
 <br>** ^^ edit for QR code ** </br>
 
-** Check out our wiki:
+** Check out our [Wiki](https://github.com/esthergiles/lion-snap-app/wiki)) for more information:
+* [About] (https://github.com/esthergiles/lion-snap-app/wiki/About)
+* [IRL Examples](https://github.com/esthergiles/lion-snap-app/wiki/IRL-Examples)
+* [Meet the Team] (https://github.com/esthergiles/lion-snap-app/wiki/Meet-The-Team)
+* [Product Features] (https://github.com/esthergiles/lion-snap-app/wiki/Product-Features)
+* [Technologies Being Used] (https://github.com/esthergiles/lion-snap-app/wiki/Technologies-Being-Used)
+
 <h2>User Story</h2>
 <br>As a UNA student that's alone in the dark</br>
 <br>I want an organized app</br>
 <br>So that I can schedule a safe SNAP ride</br>
 
-<h2>Info</h2>
-Created this repo using Azure DevOps with GitHub Actions for Continuous Deployment.
-This web applcation is being hosted in the cloud on Azure.
 
-<h2>Environment Setup</h2>
-<br>1. Install VS Code</br>
-<br>2. Install Mongo/SQL -- edit</br>
 
-<h2>Getting Started</h2>
-VS CODE: https://github.com/04banshee/Dev-Training-Lab-ALPHA
 
-<h2>To make edits:</h2>
-<br>1. clone repo</br>
-<br>2. open using your preferred IDE (maybe VS Code)</br>
-<br>3. Make edits</br>
-<br>4. Commit edits to branch and push</br>
-<br>5. GitHUb Actions will process any updates made to MAIN branch and after a few minutes the edits will display live at the following URL
-https://lionsnapapp.azurewebsites.net/ </br>
+<h2>Local Environment Setup <Section Pending Edits></h2>
+<br>1. Install VS Code or desired IDE</br>
+<br>2. Install PHP & SQL</br>
+<br>3. Clone repo to local enviroment
 
-Note: We can edit this URL to be a custom in the future. We can create branches and build automations for testing as well as creating deployment containers for testing. This rough spin up should get us started.
 
-Utilizing:
-HTML, CSS, PHP, (db undecided either mongo or sql)
