@@ -13,6 +13,12 @@
 * [Product Features](https://github.com/esthergiles/lion-snap-app/wiki/Product-Features)
 * [Technologies Being Used](https://github.com/esthergiles/lion-snap-app/wiki/Technologies-Being-Used)
 
+<h2 Other Important Links: </h2>
+* [Project Board](https://github.com/esthergiles/lion-snap-app/projects/1)
+* [Issue Cards](https://github.com/esthergiles/lion-snap-app/projects/1)
+* [Pull Requests](https://github.com/esthergiles/lion-snap-app/pulls)
+* [Azure Deployment](https://lionsnapapp.azurewebsites.net/)
+
 <h2>User Story</h2>
 <br>As a UNA student that's alone in the dark</br>
 <br>I want an organized app</br>
