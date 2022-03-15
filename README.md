@@ -2,9 +2,11 @@
 <h1>Welcome to the Lion Snap </h1>
 
 ![snap](https://user-images.githubusercontent.com/89217674/158221639-ed89e0bd-f99f-43b9-8147-a6e59ccc6f1d.jpg)
-<br>** ^^ edit for QR code ** </br>
+<br>** ^^ TO DO: edit graphic for QR code ** </br>
 
-** Check out our [Wiki](https://github.com/esthergiles/lion-snap-app/wiki)) for more information:
+<h2>Wiki Links </h2>
+
+* [Home](https://github.com/esthergiles/lion-snap-app/wiki)
 * [About](https://github.com/esthergiles/lion-snap-app/wiki/About)
 * [IRL Examples](https://github.com/esthergiles/lion-snap-app/wiki/IRL-Examples)
 * [Meet the Team](https://github.com/esthergiles/lion-snap-app/wiki/Meet-The-Team)
@@ -19,7 +21,7 @@
 
 
 
-<h2>Local Environment Setup <Section Pending Edits></h2>
+<h2>Local Environment **Setup Section Pending Edits **</h2>
 <br>1. Install VS Code or desired IDE</br>
 <br>2. Install PHP & SQL</br>
 <br>3. Clone repo to local enviroment
