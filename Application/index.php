@@ -13,11 +13,10 @@
       $message = "Success! You entered: ".$input;
     }   
 
-    $host = 'lionsnap-server.mysql.database.azure.com';
-    $username = 'taamhhvhmx';
-    $password = 'E7HHMN348V848DA8*';
+    $host = 'snapflexsqlserver.mysql.database.azure.com';
+    $username = 'snapflexsqlserver_admin';
+    $password = 'sWq*75AMm,';
     $db_name = 'testconnect';
-    
     
     //Establishes the connection
     $conn = mysqli_init();
