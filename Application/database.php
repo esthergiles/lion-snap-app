@@ -1,7 +1,7 @@
 <?php
 $servername = "unasnap.database.windows.net";
 $username = "unasnap";
-$password = "mfcf4QxRut9aPdE!k3^IAGJy2rO#PHIFJR1siW4Rx@HbxHReGU0C6hg!0it2Tu!JU^0@6I'$'QgSA1c%CcC^8tg3lVw3My1W0d8EJ";
+$password = "s'Wq*75AM,";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
