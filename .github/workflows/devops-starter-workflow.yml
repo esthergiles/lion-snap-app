@@ -18,6 +18,11 @@ env:
   APPINSIGHTSLOCATION: South Central US
   SUBSCRIPTIONID: 9c1b22fd-3070-428d-80a5-f2f6a9a049c7
   SKU: S1 Standard
+  DB_CONNECTION: "mysql"
+  DB_HOST: unasnap.database.windows.net
+  DB_DATABASE: "lionappsql"
+  DB_USERNAME: "unasnap"
+  DB_PASSWORD: "s'Wq*75AM,"
 
 jobs:
   build:
