@@ -91,7 +91,7 @@ mysqli_stmt_close($stmt);
 
 <head>
 	<meta charset="utf-8">
-	<title>Lion Snap App Test</title>
+	<title>Lion Snap App Final</title>
 	<link href="css/site.css" rel="stylesheet">
 </head>
 
