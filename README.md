@@ -12,6 +12,7 @@
 * [Meet the Team](https://github.com/esthergiles/lion-snap-app/wiki/Meet-The-Team)
 * [Product Features](https://github.com/esthergiles/lion-snap-app/wiki/Product-Features)
 * [Technologies Being Used](https://github.com/esthergiles/lion-snap-app/wiki/Technologies-Being-Used)
+* [Link to view app](http://lionsnap.azurewebsites.net/)
 
 <h2> Other Important Links:</h2>
 
