@@ -164,20 +164,4 @@ mysqli_stmt_close($stmt);
 	<link href="css/site.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="main-container">
-        <div class="content-body">
-            <div class="success-text">UNA SNAP Application UI</div>
-        </div>  
-
-        <form action="" method="post">
-        <?php echo $message; ?>
-        Enter your favorite color: 
-        <input type="text" name="inputText"/>
-        <input type="submit" name="SubmitButton"/>
-        </form> 
-    </div>
-
-    
-</body>
 </html>
