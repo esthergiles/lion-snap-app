@@ -25,15 +25,15 @@ if (mysqli_connect_errno())
 
 // Run the create table query
 
-if (mysqli_query($conn, '
-CREATE TABLE StudentNames (
-`Id` INT NOT NULL AUTO_INCREMENT ,
-`EnteredName` VARCHAR(200) NOT NULL ,
-PRIMARY KEY (`Id`)
-);
-')) {
-printf("Table created\n");
-}
+// if (mysqli_query($conn, '
+// CREATE TABLE StudentNames (
+// `Id` INT NOT NULL AUTO_INCREMENT ,
+// `EnteredName` VARCHAR(200) NOT NULL ,
+// PRIMARY KEY (`Id`)
+// );
+// ')) {
+// printf("Table created\n");
+// }
 
 //Run the Delete statement
 // $product_name = 'BrandNewProduct';
