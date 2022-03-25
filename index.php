@@ -35,27 +35,6 @@ PRIMARY KEY (`Id`)
 printf("Table created\n");
 }
 
-//Create an Insert prepared statement and run it
-$product_name = 'BrandNewProduct2';
-$product_color = 'Blue2';
-$product_price = 15.5;
-if ($stmt = mysqli_prepare($conn, "INSERT INTO Products (ProductName, Color, Price) VALUES (?, ?, ?)"))
-{
-    mysqli_stmt_bind_param($stmt, 'ssd', $product_name, $product_color, $product_price);
-    mysqli_stmt_execute($stmt);
-    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-    mysqli_stmt_close($stmt);
-}
-
-//Run the Select query
-printf("Reading data from table: \n");
-$res = mysqli_query($conn, 'SELECT * FROM Products');
-while ($row = mysqli_fetch_assoc($res))
- {
-    var_dump($row);
- }
-
-
 //Run the Delete statement
 // $product_name = 'BrandNewProduct';
 // if ($stmt = mysqli_prepare($conn, "DELETE FROM Products WHERE ProductName = ?")) {
@@ -91,14 +70,16 @@ while ($row = mysqli_fetch_assoc($res))
 
         <div>
         <?php
-        //Insert Color into database
-        // if ($stmt = mysqli_prepare($conn, "INSERT INTO Colors (Color) VALUES (?)"))
-        // {
-        //     mysqli_stmt_bind_param($stmt, 'ssd', $input);
-        //     mysqli_stmt_execute($stmt);
-        //     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-        //     mysqli_stmt_close($stmt);
-        // }
+
+        //Create an Insert prepared statement and run it
+        $new_name = _POST['name'];
+        if ($stmt = mysqli_prepare($conn, "INSERT INTO StudentNames (EnteredName) VALUES (?)"))
+        {
+            mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
+            mysqli_stmt_execute($stmt);
+            printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+            mysqli_stmt_close($stmt);
+        }
         //Run the Select query
         printf("Names Entered: \n");
         $res = mysqli_query($conn, 'SELECT * FROM StudentNames');
