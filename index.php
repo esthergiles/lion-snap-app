@@ -1,70 +1,23 @@
 <html>
 <head>
-<title>Example</title>
+<title>&nbsp; UNA SNAP</title>
+
+<br><img src="https://www.una.edu/police/images/snap%202.jpg" alt="Snap_Mascot" style="float:left;width:250px;height:250px" > </br>
 </head>
 <body style="background-color:purple;color:gold;">
 SNAP Form
 </body>
 </html>
 
-<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+ <form action="ticket.php" method="POST">
+            &nbsp; Name: <input type="text" name="name"><br>
+            &nbsp; Phone: <input type="text" name="phone"><br>
+            &nbsp; Email: <input type="text" name="email"><br>
+            &nbsp; Start Location: <input type="text" name="start_loc"><br>
+            &nbsp; Stop Location: <input type="text" name="stop_loc"><br>
+            &nbsp; <input type="submit">
+        </form>
 
-<p>
-<label>Name
-<input type="text" name="customer_name" required>
-</label> 
-</p>
-
-<p>
-<label>Phone 
-<input type="tel" name="phone_number">
-</label>
-</p>
-
-<p>
-<label>Email 
-<input type="email" name="email_address">
-</label>
-</p>
-
-<p>
-<label>Pickup Date/Time
-<input type="datetime-local" name="pickup_time" required>
-</label>
-</p>
-	
-<p>
-<label>Pickup Place
-<select id="pickup_place" name="pickup_place">
-<option value="" selected="selected">Select One</option>
-<option value="office" >The Commons</option>
-<option value="town_hall" >The GUC</option>
-<option value="telepathy" >Libraru</option>
-</select>
-</label> 
-</p>
-
-<p>
-<label>Dropoff Place
-<input type="text" name="dropoff_place" required list="destinations">
-</label>
-
-<datalist id="destinations">
-<option value="Flowers Hall">
-<option value="Hawthorne">
-<option value="Mattilou">
-</datalist>
-</p>
-
-<p>
-<label>Special Instructions
-<textarea name="comments" maxlength="500"></textarea>
-</label>
-</p>
-
-<p><button>Submit Booking</button></p>
-
-</form>
 <?php
 
 
