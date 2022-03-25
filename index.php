@@ -38,8 +38,8 @@ if (mysqli_connect_errno())
 // }
 
 //Create an Insert prepared statement and run it
-$product_name = 'BrandNewProduct';
-$product_color = 'Blue';
+$product_name = 'BrandNewProduct2';
+$product_color = 'Blue2';
 $product_price = 15.5;
 if ($stmt = mysqli_prepare($conn, "INSERT INTO Products (ProductName, Color, Price) VALUES (?, ?, ?)"))
 {
