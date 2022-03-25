@@ -21,19 +21,20 @@ if (mysqli_connect_errno())
 
 
 //Create an Insert prepared statement and run it
-// if ($stmt = mysqli_prepare($conn, "INSERT INTO StudentNames (EnteredName) VALUES (?)"))
-// {
-//     mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
-//     mysqli_stmt_execute($stmt);
-//     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-//     mysqli_stmt_close($stmt);
-// }
+if ($stmt = mysqli_prepare($conn, "INSERT INTO StudentNames (EnteredName) VALUES ('$new_name')"))
+{
+    mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
+    mysqli_stmt_execute($stmt);
+    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+    mysqli_stmt_close($stmt);
+}
+
 // //Run the Select query
 printf("Names Entered: \n");
-$res = mysqli_query($conn, 'SELECT * FROM Products ');
+$res = mysqli_query($conn, 'SELECT * FROM StudentNames ');
 while ($row = mysqli_fetch_assoc($res))
 {
-    echo $row['ProductName']. "<br>";
+    echo $row['EnteredName']. "<br>";
 }
 //Run the Delete statement
 // $product_name = 'BrandNewProduct';
