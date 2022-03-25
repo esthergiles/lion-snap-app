@@ -29,12 +29,12 @@ if (mysqli_connect_errno())
 //     mysqli_stmt_close($stmt);
 // }
 // //Run the Select query
-// printf("Names Entered: \n");
-// $res = mysqli_query($conn, 'SELECT * FROM StudentNames');
-// while ($row = mysqli_fetch_assoc($res))
-// {
-//     echo $row. "<br>";
-// }
+printf("Names Entered: \n");
+$res = mysqli_query($conn, 'SELECT * FROM StudentNames');
+while ($row = mysqli_fetch_assoc($res))
+{
+    echo $row. "<br>";
+}
 //Run the Delete statement
 // $product_name = 'BrandNewProduct';
 // if ($stmt = mysqli_prepare($conn, "DELETE FROM Products WHERE ProductName = ?")) {
