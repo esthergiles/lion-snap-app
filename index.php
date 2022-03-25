@@ -24,13 +24,13 @@ if (mysqli_connect_errno())
 }
 
 if (mysqli_query($conn, '
-CREATE TABLE test (
+CREATE TABLE testTable (
 `Id` INT NOT NULL AUTO_INCREMENT ,
-`Name` VARCHAR(200) NOT NULL ,
+`TestName` VARCHAR(200) NOT NULL ,
 `Phone` VARCHAR(50) NOT NULL ,
 `Email` VARCHAR(50) NOT NULL ,
-`Start` VARCHAR(50) NOT NULL ,
-`Stop` VARCHAR(50) NOT NULL ,
+`TestStart` VARCHAR(50) NOT NULL ,
+`TestStop` VARCHAR(50) NOT NULL ,
 PRIMARY KEY (`Id`)
 );
 ')) {
@@ -46,7 +46,7 @@ $student_start = 'test start';
 $student_stop = 'test stop';
 
 
-if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Start, Stop) VALUES (?, ?, ?, ?, ?)"))
+if ($stmt = mysqli_prepare($conn, "INSERT INTO testTable (TestName, Phone, Email, TestStart, TestStop) VALUES (?, ?, ?, ?, ?)"))
 {
     mysqli_stmt_bind_param($stmt, 'ssd', $student_name, $student_phone, $student_email, $student_start, $student_stop);
     mysqli_stmt_execute($stmt);
