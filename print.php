@@ -20,15 +20,15 @@ if (mysqli_connect_errno())
 }
 // Run the create table query
 
-if (mysqli_query($conn, '
-CREATE TABLE Test2 (
-`Id` INT NOT NULL AUTO_INCREMENT ,
-`EnteredName` VARCHAR(200) NOT NULL ,
-PRIMARY KEY (`Id`)
-);
-')) {
-printf("Table created\n");
-}
+// if (mysqli_query($conn, '
+// CREATE TABLE Test2 (
+// `Id` INT NOT NULL AUTO_INCREMENT ,
+// `EnteredName` VARCHAR(200) NOT NULL ,
+// PRIMARY KEY (`Id`)
+// );
+// ')) {
+// printf("Table created\n");
+// }
 
 // $test_name = 'test';
 // //Create an Insert prepared statement and run it
@@ -41,12 +41,12 @@ printf("Table created\n");
 // }
 
 // //Run the Select query
-// printf("Names Entered: \n");
-// $res = mysqli_query($conn, 'SELECT * FROM StudentNames ');
-// while ($row = mysqli_fetch_assoc($res))
-// {
-//     echo $row['EnteredName']. "<br>";
-// }
+printf("Names Entered: \n");
+$res = mysqli_query($conn, 'SELECT * FROM Test2 ');
+while ($row = mysqli_fetch_assoc($res))
+{
+    echo $row['EnteredName']. "<br>";
+}
 //Run the Delete statement
 // $product_name = 'BrandNewProduct';
 // if ($stmt = mysqli_prepare($conn, "DELETE FROM Products WHERE ProductName = ?")) {
