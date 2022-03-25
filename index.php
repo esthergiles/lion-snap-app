@@ -23,6 +23,20 @@ if (mysqli_connect_errno())
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
+if (mysqli_query($conn, '
+CREATE TABLE test (
+`Id` INT NOT NULL AUTO_INCREMENT ,
+`Name` VARCHAR(200) NOT NULL ,
+`Phone` VARCHAR(50) NOT NULL ,
+`Email` VARCHAR(50) NOT NULL ,
+`Start` VARCHAR(50) NOT NULL ,
+`Stop` VARCHAR(50) NOT NULL ,
+PRIMARY KEY (`Id`)
+);
+')) {
+printf("Table created\n");
+}
+
 //Insert Statement
 
 $student_name = 'Test Name';
@@ -31,33 +45,22 @@ $student_email = 'test email';
 $student_start = 'test start';
 $student_stop = 'test stop';
 
-$sql = "INSERT INTO test (Name, Phone, Email, Start, Stop)
-VALUES ($student_name, $student_phone, $student_email, $student_start, $student_stop)";
 
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Start, Stop) VALUES (?, ?, ?, ?, ?)"))
+{
+    mysqli_stmt_bind_param($stmt, 'ssd', $student_name, $student_phone, $student_email, $student_start, $student_stop);
+    mysqli_stmt_execute($stmt);
+    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+    mysqli_stmt_close($stmt);
 }
 
-$conn->close();
-
-
-// if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Start, Stop) VALUES (?, ?, ?, ?, ?)"))
-// {
-//     mysqli_stmt_bind_param($stmt, 'ssd', $student_name, $student_phone, $student_email, $student_start, $student_stop);
-//     mysqli_stmt_execute($stmt);
-//     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-//     mysqli_stmt_close($stmt);
-// }
-
 //Run the Select query
-// printf("Reading data from table: \n");
-// $res = mysqli_query($conn, 'SELECT * FROM test');
-// while ($row = mysqli_fetch_assoc($res))
-//  {
-//     var_dump($row);
-//  }
+printf("Reading data from table: \n");
+$res = mysqli_query($conn, 'SELECT * FROM test');
+while ($row = mysqli_fetch_assoc($res))
+ {
+    var_dump($row);
+ }
 
 ?>
 
