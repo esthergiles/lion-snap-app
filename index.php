@@ -72,7 +72,7 @@ printf("Table created\n");
         <?php
 
         //Create an Insert prepared statement and run it
-        $new_name = _POST['name'];
+        $new_name = $_POST['name'];
         if ($stmt = mysqli_prepare($conn, "INSERT INTO StudentNames (EnteredName) VALUES (?)"))
         {
             mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
