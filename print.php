@@ -19,11 +19,11 @@ if (mysqli_connect_errno())
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-
+$test_name = 'test';
 //Create an Insert prepared statement and run it
-if ($stmt = mysqli_prepare($conn, "INSERT INTO StudentNames (EnteredName) VALUES ('$new_name')"))
+if ($stmt = mysqli_prepare($conn, "INSERT INTO StudentNames (EnteredName) VALUES (?)"))
 {
-    mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
+    mysqli_stmt_bind_param($stmt, 'ssd', $test_name);
     mysqli_stmt_execute($stmt);
     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
     mysqli_stmt_close($stmt);
