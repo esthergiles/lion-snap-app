@@ -24,11 +24,6 @@ if (mysqli_connect_errno())
 }
 
 //Insert Statement
-$name = 'Test Name';
-$phone = '000-000-0000';
-$email = 'test@una.edu';
-$start = 'test start';
-$stop = 'test stop';
 
 $student_name = 'Test Name';
 $student_phone = 'Blue';
@@ -36,21 +31,30 @@ $student_email = 'test email';
 $student_start = 'test start';
 $student_stop = 'test stop';
 
-if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Start, Stop) VALUES (?, ?, ?, ?, ?)"))
-{
-    mysqli_stmt_bind_param($stmt, 'ssd', $student_name, $student_phone, $student_email, $student_start, $student_stop);
-    mysqli_stmt_execute($stmt);
-    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-    mysqli_stmt_close($stmt);
+$sql = "INSERT INTO test (Name, Phone, Email, Start, Stop)
+VALUES ($student_name, $student_phone, $student_email, $student_start, $student_stop)";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+// if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Start, Stop) VALUES (?, ?, ?, ?, ?)"))
+// {
+//     mysqli_stmt_bind_param($stmt, 'ssd', $student_name, $student_phone, $student_email, $student_start, $student_stop);
+//     mysqli_stmt_execute($stmt);
+//     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+//     mysqli_stmt_close($stmt);
+// }
+
 //Run the Select query
-printf("Reading data from table: \n");
-$res = mysqli_query($conn, 'SELECT * FROM test');
-while ($row = mysqli_fetch_assoc($res))
- {
-    var_dump($row);
- }
+// printf("Reading data from table: \n");
+// $res = mysqli_query($conn, 'SELECT * FROM test');
+// while ($row = mysqli_fetch_assoc($res))
+//  {
+//     var_dump($row);
+//  }
 
 ?>
 
