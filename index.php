@@ -23,19 +23,28 @@ if (mysqli_connect_errno())
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-if (mysqli_query($conn, '
-CREATE TABLE test (
-`Id` INT NOT NULL AUTO_INCREMENT ,
-`Name` VARCHAR(200) NOT NULL ,
-`Phone` VARCHAR(50) NOT NULL ,
-`Email` VARCHAR(50) NOT NULL ,
-`Start` VARCHAR(50) NOT NULL ,
-`Stop` VARCHAR(50) NOT NULL ,
-PRIMARY KEY (`Id`)
-);
-')) {
-printf("Table created\n");
+//Insert Statement
+$name = 'Test Name';
+$phone = '000-000-0000';
+$email = 'test@una.edu';
+$start = 'test start';
+$stop = 'test stop';
+
+if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Stop, Start) VALUES (?, ?, ?, ?, ?)"))
+{
+    mysqli_stmt_bind_param($stmt, 'ssd', $name, $phone, $email, $start, $stop);
+    mysqli_stmt_execute($stmt);
+    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+    mysqli_stmt_close($stmt);
 }
+
+//Run the Select query
+printf("Reading data from table: \n");
+$res = mysqli_query($conn, 'SELECT * FROM test');
+while ($row = mysqli_fetch_assoc($res))
+ {
+    var_dump($row);
+ }
 
 ?>
 
