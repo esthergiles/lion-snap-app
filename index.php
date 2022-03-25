@@ -38,13 +38,13 @@ $stop = 'test stop';
 //     mysqli_stmt_close($stmt);
 // }
 
-// //Run the Select query
-// printf("Reading data from table: \n");
-// $res = mysqli_query($conn, 'SELECT * FROM test');
-// while ($row = mysqli_fetch_assoc($res))
-//  {
-//     var_dump($row);
-//  }
+//Run the Select query
+printf("Reading data from table: \n");
+$res = mysqli_query($conn, 'SELECT * FROM test');
+while ($row = mysqli_fetch_assoc($res))
+ {
+    var_dump($row);
+ }
 
 ?>
 
