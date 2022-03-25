@@ -30,7 +30,7 @@ if (mysqli_connect_errno())
 // }
 // //Run the Select query
 printf("Names Entered: \n");
-$res = mysqli_query($conn, 'SELECT * FROM StudentNames');
+$res = mysqli_query($conn, 'SELECT * FROM Products ');
 while ($row = mysqli_fetch_assoc($res))
 {
     echo $row. "<br>";
