@@ -33,7 +33,7 @@ printf("Names Entered: \n");
 $res = mysqli_query($conn, 'SELECT * FROM Products ');
 while ($row = mysqli_fetch_assoc($res))
 {
-    echo $row. "<br>";
+    echo $row['ProductName']. "<br>";
 }
 //Run the Delete statement
 // $product_name = 'BrandNewProduct';
