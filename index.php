@@ -30,13 +30,13 @@ $email = 'test@una.edu';
 $start = 'test start';
 $stop = 'test stop';
 
-if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Stop, Start) VALUES (?, ?, ?, ?, ?)"))
-{
-    mysqli_stmt_bind_param($stmt, 'ssd', $name, $phone, $email, $start, $stop);
-    mysqli_stmt_execute($stmt);
-    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-    mysqli_stmt_close($stmt);
-}
+// if ($stmt = mysqli_prepare($conn, "INSERT INTO test (Name, Phone, Email, Stop, Start) VALUES (?, ?, ?, ?, ?)"))
+// {
+//     mysqli_stmt_bind_param($stmt, 'ssd', $name, $phone, $email, $start, $stop);
+//     mysqli_stmt_execute($stmt);
+//     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+//     mysqli_stmt_close($stmt);
+// }
 
 // //Run the Select query
 // printf("Reading data from table: \n");
