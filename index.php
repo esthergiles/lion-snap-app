@@ -25,17 +25,15 @@ if (mysqli_connect_errno())
 
 // Run the create table query
 
-// if (mysqli_query($conn, '
-// CREATE TABLE StudentNames (
-// `Id` INT NOT NULL AUTO_INCREMENT ,
-// `ProductName` VARCHAR(200) NOT NULL ,
-// `Color` VARCHAR(50) NOT NULL ,
-// `Price` DOUBLE NOT NULL ,
-// PRIMARY KEY (`Id`)
-// );
-// ')) {
-// printf("Table created\n");
-// }
+if (mysqli_query($conn, '
+CREATE TABLE StudentNames (
+`Id` INT NOT NULL AUTO_INCREMENT ,
+`EnteredName` VARCHAR(200) NOT NULL ,
+PRIMARY KEY (`Id`)
+);
+')) {
+printf("Table created\n");
+}
 
 //Create an Insert prepared statement and run it
 $product_name = 'BrandNewProduct2';
@@ -90,6 +88,7 @@ while ($row = mysqli_fetch_assoc($res))
         <input type="text" name="name"/>
         <input type="submit" name="SubmitButton"/>
         </form> 
+
         <div>
         <?php
         //Insert Color into database
@@ -105,7 +104,7 @@ while ($row = mysqli_fetch_assoc($res))
         $res = mysqli_query($conn, 'SELECT * FROM StudentNames');
         while ($row = mysqli_fetch_assoc($res))
         {
-            echo $row["id"]. "<br>";
+            echo $row. "<br>";
         }
         ?>
         </div>
