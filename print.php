@@ -18,6 +18,17 @@ if (mysqli_connect_errno())
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
+// Run the create table query
+
+if (mysqli_query($conn, '
+CREATE TABLE StudentNames (
+`Id` INT NOT NULL AUTO_INCREMENT ,
+`EnteredName` VARCHAR(200) NOT NULL ,
+PRIMARY KEY (`Id`)
+);
+')) {
+printf("Table created\n");
+}
 
 $test_name = 'test';
 //Create an Insert prepared statement and run it
