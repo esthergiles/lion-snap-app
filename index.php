@@ -11,25 +11,17 @@ $username = 'taamhhvhmx';
 $password = 'E7HHMN348V848DA8*';
 $db_name = 'testconnect';
 
+//Initializes MySQLi
+$conn = mysqli_init();
 
-// Create connection
-$conn = new mysqli($host, $username, $password, $db_name);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+// Establish the connection
+mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, NULL, MYSQLI_CLIENT_SSL);
+
+//If connection failed, show the error
+if (mysqli_connect_errno())
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-
-// //Initializes MySQLi
-// $conn = mysqli_init();
-
-// // Establish the connection
-// mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, NULL, MYSQLI_CLIENT_SSL);
-
-// //If connection failed, show the error
-// if (mysqli_connect_errno())
-// {
-//     die('Failed to connect to MySQL: '.mysqli_connect_error());
-// }
 
 //Insert Statement
 
