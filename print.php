@@ -32,13 +32,13 @@ if (mysqli_connect_errno())
 
 // $test_name = 'test';
 //Create an Insert prepared statement and run it
-if ($stmt = mysqli_prepare($conn, "INSERT INTO Test2 (EnteredName) VALUES (?)"))
-{
-    mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
-    mysqli_stmt_execute($stmt);
-    printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
-    mysqli_stmt_close($stmt);
-}
+// if ($stmt = mysqli_prepare($conn, "INSERT INTO Test2 (EnteredName) VALUES (?)"))
+// {
+//     mysqli_stmt_bind_param($stmt, 'ssd', $new_name);
+//     mysqli_stmt_execute($stmt);
+//     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
+//     mysqli_stmt_close($stmt);
+// }
 
 // //Run the Select query
 printf("Names Entered: \n");
