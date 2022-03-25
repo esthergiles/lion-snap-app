@@ -26,7 +26,7 @@ if (mysqli_connect_errno())
 // Run the create table query
 
 // if (mysqli_query($conn, '
-// CREATE TABLE Products (
+// CREATE TABLE StudentNames (
 // `Id` INT NOT NULL AUTO_INCREMENT ,
 // `ProductName` VARCHAR(200) NOT NULL ,
 // `Color` VARCHAR(50) NOT NULL ,
@@ -86,12 +86,11 @@ while ($row = mysqli_fetch_assoc($res))
         </div>  
 
         <form action="" method="post">
-        Enter your favorite color: 
-        <input type="text" name="inputText"/>
+        Enter your name: 
+        <input type="text" name="name"/>
         <input type="submit" name="SubmitButton"/>
         </form> 
-        <div><?php echo $message; ?> </div>
-
+        <div>
         <?php
         //Insert Color into database
         // if ($stmt = mysqli_prepare($conn, "INSERT INTO Colors (Color) VALUES (?)"))
@@ -101,7 +100,15 @@ while ($row = mysqli_fetch_assoc($res))
         //     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
         //     mysqli_stmt_close($stmt);
         // }
+        //Run the Select query
+        printf("Names Entered: \n");
+        $res = mysqli_query($conn, 'SELECT * FROM StudentNames');
+        while ($row = mysqli_fetch_assoc($res))
+        {
+            echo $row["id"]. "<br>";
+        }
         ?>
+        </div>
     </div>
 
     
