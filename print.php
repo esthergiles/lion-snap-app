@@ -13,7 +13,8 @@
             <div class="success-text">You Entered</div>
         </div>  
 <?php
-  $color = $_POST['name'];
+
+  $name = $_POST['name'];
 
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -31,8 +32,8 @@ if ($conn->connect_error) {
 //   echo "Connected successfully";   
 
 // Insert Data
-$sql = "INSERT INTO demotest (color)
-VALUES ($color)";
+$sql = "INSERT INTO test(firstname)
+VALUES ('$name')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -40,14 +41,15 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-// Select Data
-$sql = "SELECT color FROM demotest";
+
+// Print Data
+$sql = "SELECT firstname FROM MyGuests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "Color: " . $row["color"]. "<br>";
+    echo "Name: " . $row["firstname"]. "<br>";
   }
 } else {
   echo "0 results";
