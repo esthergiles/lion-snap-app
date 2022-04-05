@@ -28,9 +28,18 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully";    
+//   echo "Connected successfully";    
 // Insert Data
-// $conn->query()
+$sql = "INSERT INTO demotest (color)
+VALUES ('test')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
 
     
