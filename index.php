@@ -10,7 +10,7 @@
 <body>
     <div class="main-container">
         <div class="content-body">
-            <div class="success-text">UNA SNAP Application UI</div>
+            <div class="success-text">UNA SNAP Application UI </div>
         </div>  
 
         <form action="insert.php" method="post">
