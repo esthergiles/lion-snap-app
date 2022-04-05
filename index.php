@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Lion Snap App Final</title>
+	<title>Lion Snap App</title>
 	<link href="css/site.css" rel="stylesheet">
 </head>
 
