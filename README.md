@@ -28,8 +28,9 @@ Link to App: https://lionsnap.herokuapp.com/index.php
 <br>I want an organized app</br>
 <br>So that I can schedule a safe SNAP ride</br>
 
+<h2>Want to Replicate something similar on Heroku?</h2>
 
-
+Check out this [tutorial](https://www.doabledanny.com/Deploy-PHP-And-MySQL-to-Heroku)!
 
 <h2>Local Environment **Setup Section Pending Edits **</h2>
 <br>1. Install VS Code or desired IDE</br>
