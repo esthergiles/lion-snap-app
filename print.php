@@ -13,7 +13,7 @@
             <div class="success-text">You Entered</div>
         </div>  
 <?php
-  echo $_POST['name'];
+  $color = $_POST['name'];
 
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -28,10 +28,11 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-//   echo "Connected successfully";    
+//   echo "Connected successfully";   
+
 // Insert Data
 $sql = "INSERT INTO demotest (color)
-VALUES ('test')";
+VALUES ($color)";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
