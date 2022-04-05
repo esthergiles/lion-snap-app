@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<title>Lion Snap App Final</title>
-	<link href="css/site.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="main-container">
-        <div class="content-body">
-            <div class="success-text">You Entered</div>
-        </div>  
 <?php
 
   $name = $_POST['name'];
@@ -42,22 +29,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 
-// Print Data
-$sql = "SELECT firstname FROM MyGuests";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "Name: " . $row["firstname"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-
 $conn->close();
+// Sends user back to index page
+header("location:index.php");
 ?>
-
-    
-</body>
-</html>
