@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Lion Snap App</title>
-	<link href="css/site.css" rel="stylesheet">
+<title>&nbsp; UNA SNAP</title>
+
+<br><img src="https://www.una.edu/police/images/snap%202.jpg" alt="Snap_Mascot" style="float:left;width:250px;height:250px"> </br>
 </head>
+<body style="background-color:purple;color:gold;">
+&nbsp SNAP Form
+</body>
+</html>
 
-<body>
-    <div class="main-container">
-        <div class="content-body">
-            <div class="success-text">UNA SNAP Application UI Edit</div>
-        </div>  
+ <form action="ticket.php" method="POST">
+            &nbsp; Name: <input type="text" name="name"><br>
+            &nbsp; Phone: <input type="text" name="phone"><br>
+            &nbsp; Email: <input type="text" name="email"><br>
+            &nbsp; Start Location: <input type="text" name="start_loc"><br>
+            &nbsp; Stop Location: <input type="text" name="stop_loc"><br>
+            &nbsp; <input type="submit">
+        </form>
 
-        <form action="insert.php" method="post">
-        Enter your name: 
-        <input type="text" name="name"/>
-        <input type="submit" name="SubmitButton"/>
-        </form> 
 
-        <div>
             <?php
             //Step 1: Connect to DB
                 //Get Heroku ClearDB connection information
@@ -49,9 +48,4 @@
                 echo "0 results";
                 }   
             ?>
-        </div>
-    </div>
 
-    
-</body>
-</html>
