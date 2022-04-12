@@ -32,4 +32,5 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 // Sends user back to index page
 header("location:index.php");
+
 ?>
