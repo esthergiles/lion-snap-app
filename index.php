@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>&nbsp; UNA SNAP</title>
+<title>&nbsp; UNA SNAP </title>
 
 <br><img src="https://www.una.edu/police/images/snap%202.jpg" alt="Snap_Mascot" style="float:left;width:250px;height:250px"> </br>
 </head>
