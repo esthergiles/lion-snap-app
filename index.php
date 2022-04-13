@@ -36,7 +36,7 @@
                 }
                 //   echo "Connected successfully";   
             //Testing Print Data
-                $sql = "SELECT firstname FROM reservations";
+                $sql = "SELECT * FROM reservations";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
