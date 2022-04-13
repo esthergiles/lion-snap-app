@@ -48,7 +48,7 @@
                 }   
             ?>
 
-    <form method="POST">
+    <form action = "" method="POST">
             &nbsp; Email: <input type="text" name="search_email"><br>
             &nbsp; <input type="submit">
         </form>
