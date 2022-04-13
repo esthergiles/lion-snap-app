@@ -6,6 +6,8 @@
   $email = $_POST['email'];
   $pickup = $_POST['start_loc'];
   $dropoff = $_POST['stop_loc'];
+  $numStudents = $_POST['num_students'];
+
 
 
 //Get Heroku ClearDB connection information
@@ -24,8 +26,8 @@ if ($conn->connect_error) {
 //   echo "Connected successfully";   
 
 // Insert Data
-$sql = "INSERT INTO reservations(name, phone, email, start_location, stop_location)
-VALUES ('$name', '$phone', '$email', '$pickup', '$dropoff')";
+$sql = "INSERT INTO reservations(name, phone, email, start_location, stop_location, num_students)
+VALUES ('$name', '$phone', '$email', '$pickup', '$dropoff', '$numStudents')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
