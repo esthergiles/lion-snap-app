@@ -6,8 +6,6 @@
 </head>
 <body style="background-color:purple;color:gold;">
 &nbsp SNAP Form
-</body>
-</html>
 
  <form action="insert.php" method="POST">
             &nbsp; Name: <input type="text" name="name"><br>
@@ -34,7 +32,8 @@
                 if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
                 }
-                //   echo "Connected successfully";   
+                //   echo "Connected successfully"; 
+
             //Testing Print Data
                 $sql = "SELECT * FROM reservations";
                 $result = $conn->query($sql);
@@ -48,4 +47,25 @@
                 echo "0 results";
                 }   
             ?>
+    <h2> Search For Reservation </h2>
+    <form action = "" method="POST">
+            &nbsp; Email: <input type="text" name="search_email"><br>
+            &nbsp; <input type="submit">
+        </form>
 
+          <?php  
+                $search = $_POST['search_email'];
+                $sql = "SELECT * FROM reservations WHERE email='$search'";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]. "<br>";
+                }
+                } else {
+                echo "0 results";
+                }   
+            ?>
+</body>
+</html>
