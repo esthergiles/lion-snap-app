@@ -9,7 +9,7 @@
 </body>
 </html>
 
- <form action="ticket.php" method="POST">
+ <form action="insert.php" method="POST">
             &nbsp; Name: <input type="text" name="name"><br>
             &nbsp; Phone: <input type="text" name="phone"><br>
             &nbsp; Email: <input type="text" name="email"><br>
@@ -35,7 +35,7 @@
                     die("Connection failed: " . $conn->connect_error);
                 }
                 //   echo "Connected successfully";   
-            //Step 2: Print Data
+            //Testing Print Data
                 $sql = "SELECT firstname FROM test";
                 $result = $conn->query($sql);
 
