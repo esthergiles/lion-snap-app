@@ -10,7 +10,7 @@
 </html>
 
  <form action="insert.php" method="POST">
-            &nbsp; Name: <input type="text" name="name"><br>
+            &nbsp; Name test test: <input type="text" name="name"><br>
             &nbsp; Phone: <input type="text" name="phone"><br>
             &nbsp; Email: <input type="text" name="email"><br>
             &nbsp; Start Location: <input type="text" name="start_loc"><br>
