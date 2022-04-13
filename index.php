@@ -47,7 +47,7 @@
                 echo "0 results";
                 }   
             ?>
-
+    <h2> Search For Reservation </h2>
     <form action = "" method="POST">
             &nbsp; Email: <input type="text" name="search_email"><br>
             &nbsp; <input type="submit">
