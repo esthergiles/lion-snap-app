@@ -36,13 +36,13 @@
                 }
                 //   echo "Connected successfully";   
             //Testing Print Data
-                $sql = "SELECT firstname FROM test";
+                $sql = "SELECT firstname FROM reservations";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                    echo "Name: " . $row["firstname"]. "<br>";
+                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["pickup"]."   " . $row["dropoff"]. "<br>";
                 }
                 } else {
                 echo "0 results";
