@@ -13,6 +13,7 @@
             &nbsp; Email: <input type="text" name="email"><br>
             &nbsp; Start Location: <input type="text" name="start_loc"><br>
             &nbsp; Stop Location: <input type="text" name="stop_loc"><br>
+            &nbsp; Number of Students: <input type="text" name="num_students"><br>
             &nbsp; <input type="submit">
         </form>
 
@@ -41,7 +42,7 @@
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]. "<br>";
+                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]."   " . $row["num_students"]. "<br>";
                 }
                 } else {
                 echo "0 results";
@@ -61,7 +62,7 @@
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]. "<br>";
+                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]."   " . $row["num_students"]. "<br>";
                 }
                 } else {
                 echo "0 results";
