@@ -10,7 +10,7 @@
 </html>
 
  <form action="insert.php" method="POST">
-            &nbsp; Name test test: <input type="text" name="name"><br>
+            &nbsp; Name: <input type="text" name="name"><br>
             &nbsp; Phone: <input type="text" name="phone"><br>
             &nbsp; Email: <input type="text" name="email"><br>
             &nbsp; Start Location: <input type="text" name="start_loc"><br>
@@ -36,13 +36,13 @@
                 }
                 //   echo "Connected successfully";   
             //Testing Print Data
-                $sql = "SELECT firstname FROM test";
+                $sql = "SELECT * FROM reservations";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                    echo "Name: " . $row["firstname"]. "<br>";
+                    echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]. "<br>";
                 }
                 } else {
                 echo "0 results";
