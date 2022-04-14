@@ -28,7 +28,8 @@
 
 	
 		<div class="row mbr-justify-content-center">
-                    <div class="col-lg-6 mbr-col-md-10">
+        <a href="request_form.php">
+            <div class="col-lg-6 mbr-col-md-10">
                 <div class="wrap">
                     <div class="ico-wrap">
                         <span class="mbr-iconfont fa-calendar fa"></span>
@@ -41,7 +42,7 @@
                         <p class="mbr-fonts-style text1 mbr-text display-6">The service is staffed by students equipped and supervised by the University Police Department.</p>
                     </div>
                 </div>
-            </div>
+            </div></a>
             <div class="col-lg-6 mbr-col-md-10">
                 <div class="wrap">
                     <div class="ico-wrap">
