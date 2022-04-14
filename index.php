@@ -45,7 +45,7 @@
             <div class="col-lg-6 mbr-col-md-10">
                 <div class="wrap">
                     <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-calendar-edit fa"></span>
+                        <span class="mbr-iconfont fa-edit fa"></span>
                     </div>
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Manage <span>Existing Request</span></h2>
