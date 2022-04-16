@@ -14,7 +14,7 @@
 <!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="https://www.una.edu">
-    <img src="https://una.elluciancrmrecruit.com/Apply/File/DownloadPicture?name=una_logo2" width="30" height="30" alt="">
+    <img src="https://una.elluciancrmrecruit.com/Apply/File/DownloadPicture?name=una_logo2">
   </a>
 </nav>
 
