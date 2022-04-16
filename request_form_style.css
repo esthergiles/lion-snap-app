@@ -1,9 +1,11 @@
+button{
+    background-color: #5b2d83;
+}
 body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
     background-image: url("https://una.elluciancrmrecruit.com/Apply/File/DownloadPicture?name=una_ugbackground4");    
-
 }
 
 .card {
