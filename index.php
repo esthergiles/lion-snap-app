@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- Just an image -->
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar recruit-navbar">
   <a class="navbar-brand" href="https://www.una.edu">
     <img src="https://una.elluciancrmrecruit.com/Apply/File/DownloadPicture?name=una_logo2" width= "275px">
   </a>

@@ -13,12 +13,3 @@
 @media (min-width: 768px) { .recruit-navbar .main-navbar > li:hover:after,.recruit-navbar .main-navbar > li.active:after { background-color: #db9f11; } }
 
 .recruit-navbar .navbar-nav > .active > a,.recruit-navbar .navbar-nav > .active > a:hover,.recruit-navbar .navbar-nav > .active > a:focus { color: #ffffff; background-color: #46166b ; }
-
-.dropdown-menu > li > .form-link:hover,.dropdown-menu > li > .form-link:focus { color: #ffffff; text-decoration: none; background-color: #db9f11; }
-
-.navbar-nav > li > .dropdown-menu { background-color: #46166b ; }
-.navbar-nav > li > .dropdown-menu li:hover { background-color: #db9f11; }
-.navbar-nav > li > .dropdown-menu li a { color: #ffffff; }
-
-	
-.recruit-navbar-logo { background-image: url("https://una.elluciancrmrecruit.com/Apply/File/DownloadPicture?name=una_logo2"); width: 275px;} 
