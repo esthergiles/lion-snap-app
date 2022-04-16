@@ -1,15 +1,8 @@
 /* Theses styles affect the styles for Navigation Bar */   
 
-.recruit-navbar { background-color: #46166b ;  border-bottom-color: #db9f11; }
+.snap-bar { 
+    background-color: #46166b ;  
+    border-bottom-color: #db9f11; 
+}
 
-.recruit-navbar .navbar-nav > li > a { color: #ffffff; background-color: #46166b ; }
 
-.recruit-navbar .navbar-nav > li > a:hover,.recruit-navbar .navbar-nav > li > a:focus { background-color: #46166b ;color: #ffffff; }
-
-.recruit-navbar .navbar-nav > li > form { color: #ffffff; background-color: #46166b ; }
-
-.recruit-navbar .navbar-nav > li > form > a:hover,.recruit-navbar .navbar-nav > li > form > a:focus { background-color: #46166b ;color: #ffffff; }
-
-@media (min-width: 768px) { .recruit-navbar .main-navbar > li:hover:after,.recruit-navbar .main-navbar > li.active:after { background-color: #db9f11; } }
-
-.recruit-navbar .navbar-nav > .active > a,.recruit-navbar .navbar-nav > .active > a:hover,.recruit-navbar .navbar-nav > .active > a:focus { color: #ffffff; background-color: #46166b ; }
