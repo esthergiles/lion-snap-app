@@ -11,27 +11,12 @@
 <!-- <br><img src="https://www.una.edu/police/images/snap%202.jpg" alt="Snap_Mascot" style="float:left;width:250px;height:250px"> </br> -->
 </head>
 <body>
-<div class="container-fluid">
-		<div class="navbar-header">
-			<!-- Navbar Brand -->
-			<a href="https://www.una.edu" class="navbar-brand recruit-navbar-logo"></a>
-		</div>
-
-		<div class="collapse navbar-collapse" id="recruit-nav-components">
-			<!-- Navbar Menu -->
-			<ul class="nav navbar-nav main-navbar navbar-left" id="elcn-nav-main">
-				<li class="active">
-					<a href="/request_form.php" aria-label="Request Form">New Request</a>
-				</li>
-				<li>
-					<a href="/manage_request.php" aria-label="Manage Existing Request">Manage Existing Request</a>
-				 </li>
-				<li>
-                    <a href='/Apply/Application/ApplicationList' aria-label='Apply Online'>FAQ</a>
-                </li>   
-            </ul>
-        </div>
-    </div>
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="https://www.una.edu">
+    <img src="https://una.elluciancrmrecruit.com/Apply/File/DownloadPicture?name=una_logo2" width="30" height="30" alt="">
+  </a>
+</nav>
 
 
             <?php
