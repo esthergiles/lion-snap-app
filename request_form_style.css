@@ -31,8 +31,6 @@ button {
     border: 1px solid #ccc;
     font-size: 18px !important;
     font-weight: 300;
-    background-color:#5b2d83
-
 }
 
 input:focus,
@@ -51,6 +49,7 @@ textarea:focus {
     font-weight: 400;
     height: 43px;
     cursor: pointer;
+    background-color:#5b2d83
 }
 
 .btn-block:hover {
