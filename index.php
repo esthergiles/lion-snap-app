@@ -11,55 +11,18 @@
 <!-- <br><img src="https://www.una.edu/police/images/snap%202.jpg" alt="Snap_Mascot" style="float:left;width:250px;height:250px"> </br> -->
 </head>
 <body>
- <!-- <form action="insert.php" method="POST">
-            &nbsp; Name: <input type="text" name="name"><br>
-            &nbsp; Phone: <input type="text" name="phone"><br>
-            &nbsp; Email: <input type="text" name="email"><br>
-            &nbsp; Start Location: <input type="text" name="start_loc"><br>
-            &nbsp; Stop Location: <input type="text" name="stop_loc"><br>
-            &nbsp; Number of Students: <input type="text" name="num_students"><br>
-            &nbsp; <input type="submit">
-        </form> -->
-
-
-
-<section>
-<div class="container">
-
-<!-- Possible fix for div formatting https://stackoverflow.com/questions/54091172/when-wrapping-a-div-in-an-anchor-tag-the-layout-gets-messed-up -->	
-		<div class="row mbr-justify-content-center">
-        <a href="request_form.php">
-            <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
-                    <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-calendar fa"></span>
-                    </div>
-
-                    <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Schedule
-                            <span>An Escort Request</span>
-                        </h2>
-                        <p class="mbr-fonts-style text1 mbr-text display-6">The service is staffed by students equipped and supervised by the University Police Department.</p>
-                    </div>
-                </div>
-            </div>
-            <a href="request_form.php">
-            <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
-                    <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-edit fa"></span>
-                    </div>
-                    <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Manage <span>Existing Request</span></h2>
-                        <p class="mbr-fonts-style text1 mbr-text display-6">Need to change the pickup location or cancel a request? No problem.</p>
-                    </div>
-                </div>
-            </div></a>
-        </div>
-
-</div>
-
-</section>
+			<!-- Navbar Brand -->
+			<a href="https://www.una.edu" class="navbar-brand recruit-navbar-logo"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="recruit-nav-components">
+			<!-- Navbar Menu -->
+			<ul class="nav navbar-nav main-navbar navbar-left" id="elcn-nav-main">
+					<li class="active">
+						<a href="/request_form.php" aria-label="Request Form">New Request</a>
+					</li>
+						<li>
+								<a href="/manage_request.php" aria-label="Manage Existing Request">Manage Existing Request</a>
+						</li>
 
             <?php
             //Step 1: Connect to DB
