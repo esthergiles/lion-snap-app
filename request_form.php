@@ -13,9 +13,10 @@
 <div class="container-fluid px-1 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <div class="card">
             <h3>STUDENT NIGHTTIME AUXILIARY PATROL</h3>
             <p class="blue-text">SNAP provides nightly escorts anywhere on campus to persons on request.</p>
-            <div class="card">
+
                 <h5 class="text-center mb-4">Escort Request Details</h5>
                 <form class="form-card" onsubmit="event.preventDefault()">
                     <div class="row justify-content-between text-left">
