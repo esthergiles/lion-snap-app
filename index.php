@@ -26,7 +26,7 @@
 <section>
 <div class="container">
 
-	
+<!-- Possible fix for div formatting https://stackoverflow.com/questions/54091172/when-wrapping-a-div-in-an-anchor-tag-the-layout-gets-messed-up -->	
 		<div class="row mbr-justify-content-center">
         <a href="request_form.php">
             <div class="col-lg-6 mbr-col-md-10">
