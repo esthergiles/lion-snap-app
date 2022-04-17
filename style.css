@@ -1,0 +1,33 @@
+/* Theses styles affect the styles for Navigation Bar */   
+
+.navbar-light .navbar-nav > .nav-item > a:hover, .navbar-light .navbar-nav > .nav-item > a:focus {
+    color: #db9f11; /*Sets the text hover color on navbar*/
+}
+
+.navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active >
+        a:hover, .navbar-light .navbar-nav > .active > a:focus {
+    color: #db9f11; /*BACKGROUND color for active*/
+    background-color: #46166b;
+}
+
+.navbar-light {
+    background-color: #46166b;
+    border-color: #030033;
+}
+
+.dropdown-menu > .nav-item > a:hover,
+.dropdown-menu > .nav-item > a:focus {
+    color: #db9f11;
+    text-decoration: none;
+    background-color: #46166b; /*change color of links in drop down here*/
+}
+
+.nav > .nav-item > a:hover,
+.nav > .nav-item > a:focus {
+    text-decoration: none;
+    background-color: #f0ebeb; /*Change rollover cell color here*/
+}
+
+.navbar-light .navbar-nav > .nav-item > a {
+    color: white; /*Change active text color here*/
+}
