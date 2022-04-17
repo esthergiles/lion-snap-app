@@ -33,7 +33,7 @@
         <a class="nav-link" href="request_form.php">New Request</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Managed Existing Request</a>
+        <a class="nav-link" href="manage.php">Managed Existing Request</a>
       </li>
     </ul>
   </div>
