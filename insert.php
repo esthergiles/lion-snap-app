@@ -1,12 +1,13 @@
 
 <?php
 
-  $name = $_POST['name'];
-  $phone = $_POST['phone'];
+  $fname = $_POST['fname'];
+  $lname = $_POST['lname'];
+  $phone = $_POST['mob']; //Mob stands for Mobile
   $email = $_POST['email'];
-  $pickup = $_POST['start_loc'];
-  $dropoff = $_POST['stop_loc'];
-  $numStudents = $_POST['num_students'];
+  $start_location = $_POST['start_location'];
+  $end_location = $_POST['end_location'];
+  $numStudents = $_POST['num'];
 
 
 
@@ -26,8 +27,8 @@ if ($conn->connect_error) {
 //   echo "Connected successfully";   
 
 // Insert Data
-$sql = "INSERT INTO reservations(name, phone, email, start_location, stop_location, num_students)
-VALUES ('$name', '$phone', '$email', '$pickup', '$dropoff', '$numStudents')";
+$sql = "INSERT INTO reservations(fname, lname, phone, email, start_location, stop_location, num_students)
+VALUES ('$fname', '$lname', '$phone', '$email', '$start_location', '$end_location', '$numStudents')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
