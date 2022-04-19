@@ -1,31 +1,19 @@
 
 <?php
+include("database.php"); // defines database connection details
 
-  $name = $_POST['name'];
-  $phone = $_POST['phone'];
+
+  $fname = $_POST['fname'];
+  $lname = $_POST['lname'];
+  $phone = $_POST['mob']; //Mob stands for Mobile
   $email = $_POST['email'];
-  $pickup = $_POST['start_loc'];
-  $dropoff = $_POST['stop_loc'];
-
-
-//Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-//   echo "Connected successfully";   
+  $start_location = $_POST['start_location'];
+  $end_location = $_POST['end_location'];
+  $numStudents = $_POST['num'];
 
 // Insert Data
-$sql = "INSERT INTO reservations(name, phone, email, start_location, stop_location)
-VALUES ('$name', '$phone', '$email', '$pickup', '$dropoff')";
+$sql = "INSERT INTO reservations(fname, lname, phone, email, start_location, stop_location, num_students)
+VALUES ('$fname', '$lname', '$phone', '$email', '$start_location', '$end_location', '$numStudents')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
