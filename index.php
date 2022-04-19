@@ -68,3 +68,4 @@ contact SNAP via telephone at 256-765-4357 (HELP) or fill out a request online v
 
 </body>
 </html>
+
