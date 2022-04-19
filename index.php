@@ -66,55 +66,5 @@ contact SNAP via telephone at 256-765-4357 (HELP) or fill out a request online v
 
 <div>"Working Together for a Safer Community"</div>
 
-            <?php
-            //Step 1: Connect to DB
-                //Get Heroku ClearDB connection information
-                $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-                $cleardb_server = $cleardb_url["host"];
-                $cleardb_username = $cleardb_url["user"];
-                $cleardb_password = $cleardb_url["pass"];
-                $cleardb_db = substr($cleardb_url["path"],1);
-                $active_group = 'default';
-                $query_builder = TRUE;
-                // Connect to DB
-                $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-                if ($conn->connect_error) {
-                    die("Connection failed: " . $conn->connect_error);
-                }
-                //   echo "Connected successfully"; 
-
-            //Testing Print Data
-                // $sql = "SELECT * FROM reservations";
-                // $result = $conn->query($sql);
-
-                // if ($result->num_rows > 0) {
-                // // output data of each row
-                // while($row = $result->fetch_assoc()) {
-                //     echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]."   " . $row["num_students"]. "<br>";
-                // }
-                // } else {
-                // echo "0 results";
-                // }   
-            ?>
-    <!-- <h2> Search For Reservation </h2>
-    <form action = "" method="POST">
-            &nbsp; Email: <input type="text" name="search_email"><br>
-            &nbsp; <input type="submit">
-        </form> -->
-
-          <?php  
-                // $search = $_POST['search_email'];
-                // $sql = "SELECT * FROM reservations WHERE email='$search'";
-                // $result = $conn->query($sql);
-
-                // if ($result->num_rows > 0) {
-                // // output data of each row
-                // while($row = $result->fetch_assoc()) {
-                //     echo "Reservation: " . $row["name"]. "   " . $row["phone"]."   " . $row["email"]."   " . $row["start_location"]."   " . $row["stop_location"]."   " . $row["num_students"]. "<br>";
-                // }
-                // } else {
-                // echo "0 results";
-                // }   
-            ?>
 </body>
 </html>
