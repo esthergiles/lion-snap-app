@@ -1,6 +1,8 @@
 
+
 <?php
 include("database.php"); // defines database connection details
+
 
   $fname = $_POST['fname'];
   $lname = $_POST['lname'];
@@ -15,14 +17,11 @@ $sql = "INSERT INTO reservations(fname, lname, phone, email, start_location, sto
 VALUES ('$fname', '$lname', '$phone', '$email', '$start_location', '$end_location', '$numStudents')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  header("location:request_confirm.php");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 
 $conn->close();
-// Sends user back to index page
-header("location:index.php");
-
 ?>
