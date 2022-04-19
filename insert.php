@@ -2,7 +2,6 @@
 <?php
 include("database.php"); // defines database connection details
 
-
   $fname = $_POST['fname'];
   $lname = $_POST['lname'];
   $phone = $_POST['mob']; //Mob stands for Mobile
