@@ -1,5 +1,4 @@
 
-
 <?php
 include("database.php"); // defines database connection details
 

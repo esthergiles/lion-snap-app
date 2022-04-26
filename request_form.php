@@ -36,10 +36,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home </a>
+        <a class="nav-link" href="about.html">About </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="request_form.php">New Request<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">New Request<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="manage.php">Managed Existing Request</a>
@@ -60,18 +60,20 @@
                 <h5 class="text-center mb-4">Escort Request Details</h5>
                 <form class="form-card"  action ="insert.php" method="POST">
                     <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> </div>
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)" required> </div>
                     </div>
                     <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">UNA Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">UNA Email<span class="text-danger"> *</span></label> <input type="email" id="email" name="email" placeholder="email@una.edu" onblur="validate(3)" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="tel" id="mob" name="mob" placeholder="123-456-7899" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onblur="validate(4)" required> </div>
                     </div>
                     <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Pickup Location<span class="text-danger"> *</span></label> <input type="text" id="start_location" name="start_location" placeholder="" onblur="validate(5)"> </div>
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Dropoff Location<span class="text-danger"> *</span></label> <input type="text" id="end_location" name="end_location" placeholder="" onblur="validate(6)"> </div>                    </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Pickup Location<span class="text-danger"> *</span></label> <input type="text" id="start_location" name="start_location" onblur="validate(5)" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Dropoff Location<span class="text-danger"> *</span></label> <input type="text" id="end_location" name="end_location" placeholder="Enter End Location" onblur="validate(6)" required> </div>                    </div>
                                         <div class="row justify-content-between text-left">
-                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Number of Students<span class="text-danger"> *</span></label> <input type="text" id="num" name="num" placeholder="" onblur="validate(7)"> </div>
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Number of Students<span class="text-danger"> *</span></label> <input type="number" min="1" max ="10" id="num" name="num" placeholder="2" onblur="validate(7)" required> </div>
+                     <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Date & Time <span class="text-danger"> *</span></label> <input type="datetime-local" id="num" name="datetime" placeholder="" onblur="validate(7)"> </div>
+
                     </div>
                     <div class="row justify-content-end">
                         <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Submit Request</button> </div>

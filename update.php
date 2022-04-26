@@ -50,7 +50,7 @@ $resid= $_GET['resid'];
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home </a>
+        <a class="nav-link" href="about.html">About </a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="request_form.php">New Request</a>

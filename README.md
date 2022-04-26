@@ -2,7 +2,7 @@
 Link to App: https://lionsnap.herokuapp.com/index.php
 <h1>Welcome to the Lion Snap </h1>
 
-![image](https://user-images.githubusercontent.com/89217674/165365850-825b5618-f348-40d2-b667-00a0c991be03.png)
+![snap](https://user-images.githubusercontent.com/89217674/158221639-ed89e0bd-f99f-43b9-8147-a6e59ccc6f1d.jpg)
 <br>** ^^ TO DO: edit graphic for QR code ** </br>
 
 <h2>Wiki Links </h2>

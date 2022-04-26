@@ -68,7 +68,7 @@
                         <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="tel" id="mob" name="mob" placeholder="123-456-7899" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onblur="validate(4)" required> </div>
                     </div>
                     <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Pickup Location<span class="text-danger"> *</span></label> <input type="text" id="start_location" name="start_location" onblur="validate(5)" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Pickup Location<span class="text-danger"> *</span></label> <input type="text" id="start_location" name="start_location" value="Raburn" onblur="validate(5)" required> </div>
                         <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Dropoff Location<span class="text-danger"> *</span></label> <input type="text" id="end_location" name="end_location" placeholder="Enter End Location" onblur="validate(6)" required> </div>                    </div>
                                         <div class="row justify-content-between text-left">
                     <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Number of Students<span class="text-danger"> *</span></label> <input type="number" min="1" max ="10" id="num" name="num" placeholder="2" onblur="validate(7)" required> </div>
