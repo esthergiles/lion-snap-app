@@ -2,7 +2,7 @@
 Link to App: https://lionsnap.herokuapp.com/index.php
 <h1>Welcome to the Lion Snap </h1>
 
-![image](https://user-images.githubusercontent.com/89217674/165376298-41d30ff3-b724-4f70-a736-9b9c4f5ba276.png)
+![image](https://github.com/esthergiles/lion-snap-app/blob/master/imgs/Lion%20Snap%20Poster.png?raw=true)
 <br></br>
 
 <h2>Wiki Links </h2>
