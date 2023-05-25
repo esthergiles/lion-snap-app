@@ -1,60 +1,34 @@
 /* Theses styles affect the styles for Navigation Bar */   
 
-.navbar-light .navbar-nav > .nav-item > a {
-    color: #ffffff; /* Set default text color to white */
+.navbar-light .navbar-nav > .nav-item > a:hover, .navbar-light .navbar-nav > .nav-item > a:focus {
+    color: #db9f11; /*Sets the text hover color on navbar*/
+}
+
+.navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active >
+        a:hover, .navbar-light .navbar-nav > .active > a:focus {
+    color: #db9f11; /*BACKGROUND color for active*/
     background-color: #46166b;
 }
 
-.navbar-light .navbar-nav > .nav-item > a:hover,
-.navbar-light .navbar-nav > .nav-item > a:focus {
-    color: #db9f11; /* Set text hover color to golden */
+.navbar-light {
+    color: #f0ebeb;
     background-color: #46166b;
-}
-
-.navbar-light .navbar-nav > .active > a,
-.navbar-light .navbar-nav > .active > a:hover,
-.navbar-light .navbar-nav > .active > a:focus {
-    color: #db9f11; /* Set active text color to golden */
-    background-color: #46166b; /* Set active background color */
+    border-color: #db9f11;
 }
 
 .dropdown-menu > .nav-item > a:hover,
 .dropdown-menu > .nav-item > a:focus {
-    color: #db9f11; /* Set dropdown text hover color to golden */
-    background-color: #46166b; /* Set dropdown background color */
+    color: #db9f11;
+    text-decoration: none;
+    background-color: #46166b; /*change color of links in drop down here*/
 }
 
+.nav > .nav-item > a:hover,
+.nav > .nav-item > a:focus {
+    text-decoration: none;
+    background-color: #f0ebeb; /*Change rollover cell color here*/
+}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333333;
-    line-height: 1.5;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  em {
-    font-style: italic;
-  }
-  
-  
+.navbar-light .navbar-nav > .nav-item > a {
+    color: #db9f11; /*Change active text color here*/
+}
