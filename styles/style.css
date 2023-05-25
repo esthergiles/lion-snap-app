@@ -2,11 +2,13 @@
 
 .navbar-light .navbar-nav > .nav-item > a {
     color: #ffffff; /* Set default text color to white */
+    background-color: #46166b;
 }
 
 .navbar-light .navbar-nav > .nav-item > a:hover,
 .navbar-light .navbar-nav > .nav-item > a:focus {
     color: #db9f11; /* Set text hover color to golden */
+    background-color: #46166b;
 }
 
 .navbar-light .navbar-nav > .active > a,
