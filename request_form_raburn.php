@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="request_form_style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/request_form_style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <title>&nbsp; UNA SNAP </title>
 

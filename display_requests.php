@@ -21,9 +21,9 @@ include("database.php"); // defines database connection details
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <!-- Custom CSS -->
-    <link rel="stylesheet" href="request_form_style.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="table_style.css">
+    <link rel="stylesheet" href="styles/request_form_style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/table_style.css">
 
 
     <title>&nbsp; UNA SNAP </title>
