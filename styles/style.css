@@ -7,11 +7,12 @@
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active >
         a:hover, .navbar-light .navbar-nav > .active > a:focus {
     color: #db9f11; /*BACKGROUND color for active*/
-    background-color: #db9f11;
+    background-color: #46166b;
 }
 
 .navbar-light {
-    background-color: #db9f11;
+    color: #db9f11;
+    background-color: #46166b;
     border-color: #db9f11;
 }
 
