@@ -1,7 +1,7 @@
 /* Theses styles affect the styles for Navigation Bar */   
 
 .navbar-light .navbar-nav > .nav-item > a:hover, .navbar-light .navbar-nav > .nav-item > a:focus {
-    color: #f0ebeb; /*Sets the text hover color on navbar*/
+    color: #db9f11; /*Sets the text hover color on navbar*/
 }
 
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active >
