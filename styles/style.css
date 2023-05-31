@@ -1,19 +1,19 @@
 /* Theses styles affect the styles for Navigation Bar */   
 
 .navbar-light .navbar-nav > .nav-item > a:hover, .navbar-light .navbar-nav > .nav-item > a:focus {
-    color: #db9f11; /*Sets the text hover color on navbar*/
+    color: #f0ebeb; /*Sets the text hover color on navbar*/
 }
 
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active >
         a:hover, .navbar-light .navbar-nav > .active > a:focus {
-    color: #db9f11; /*BACKGROUND color for active*/
+    color: #f0ebeb; /*BACKGROUND color for active*/
     background-color: #46166b;
 }
 
 .navbar-light {
     color: #f0ebeb;
     background-color: #46166b;
-    /* border-color: #db9f11; */
+    border-color: #f0ebeb;
 }
 
 .dropdown-menu > .nav-item > a:hover,
