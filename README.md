@@ -1,5 +1,4 @@
 # lion-snap-app
-Link to App: https://lionsnap.herokuapp.com/index.php
 <h1>Welcome to the Lion Snap </h1>
 
 ![image](https://github.com/esthergiles/lion-snap-app/blob/master/imgs/Lion%20Snap%20Poster.png?raw=true)
